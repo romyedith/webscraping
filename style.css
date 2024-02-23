@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+  width: 50%; /* Cambia el ancho a 50% para que la tabla ocupe la mitad izquierda */
+  margin-top: 20px;
+  float: left; /* Alinea la tabla a la izquierda */
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+}
+
