@@ -1,33 +1,49 @@
-table {
-  border-collapse: collapse;
-  width: 50%; /* Cambia el ancho a 50% para que la tabla ocupe la mitad izquierda */
-  margin-top: 20px;
-  float: left; /* Alinea la tabla a la izquierda */
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-th, td {
-  text-align: left;
-  padding: 8px;
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-th {
-  background-color: #007BFF;
-  color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-table, th, td {
+/* Contenedores de las tablas */
+.tabla-izquierda,
+.tabla-derecha {
+  flex: 1;
   border: 1px solid #ddd;
+  padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
-  table {
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-  }
+/* Encabezado de las tablas */
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Encabezado de las tablas */
+th {
+  background-color: #f2f2f2;
+  padding: 5px;
+  text-align: left;
+}
+
+/* Celdas de las tablas */
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
 }
 

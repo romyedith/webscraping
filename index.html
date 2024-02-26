@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Productos Amazon</title>
-    <link rel="stylesheet" href="style.css"> <!-- Si quieres añadir estilos -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dos tablas comparativas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista de Productos Amazon</h1>
-    <div id="productos"></div>
+  <div class="container">
+    <div class="tabla-izquierda">
+      <h2>Amazon</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+    </div>
+    <div class="tabla-derecha">
+      <h2>Mercado Libre</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          </tbody>
+      </table>
+    </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
